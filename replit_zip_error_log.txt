@@ -1,0 +1,10 @@
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .cache/replit/modules/nodejs-20","time":"2024-11-06T17:43:45Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .cache/replit/modules/replit","time":"2024-11-06T17:43:45Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .config/npm/node_global/bin/tsc","time":"2024-11-06T17:43:46Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file .config/npm/node_global/bin/tsserver","time":"2024-11-06T17:43:46Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/crc32","time":"2024-11-06T17:43:47Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/mime","time":"2024-11-06T17:43:47Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/rlp","time":"2024-11-06T17:43:47Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/tsc","time":"2024-11-06T17:43:47Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/tsserver","time":"2024-11-06T17:43:47Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/web3-eth-contract/node_modules/.bin/rlp","time":"2024-11-06T17:43:52Z"}
