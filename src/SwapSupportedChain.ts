@@ -10,7 +10,7 @@ export async function getSwapSupportedChain() {
         timestamp +
           "GET" +
           "/api/v5/dex/aggregator/supported/chain?chains=59144",
-        "3A4193E92078633B376FB4937899E4A2",
+        process.env.SIGN || "",
       ),
     );
 
@@ -19,11 +19,11 @@ export async function getSwapSupportedChain() {
       // "https://www.okx.com/api/v5/dex/cross-chain/build-tx?fromChainId=59144&toChainId=",
       {
         headers: {
-          "OK-ACCESS-PROJECT": "eef86aba59d93b4a8a90480e49d5d63b",
-          "OK-ACCESS-KEY": "07e956d1-664e-4fcb-b918-e980d9184729",
+          "OK-ACCESS-PROJECT": process.env.PROJECT_ID || "",
+          "OK-ACCESS-KEY": process.env.ACCESS_KEY || "",
           "OK-ACCESS-TIMESTAMP": timestamp,
           "OK-ACCESS-SIGN": sign,
-          "OK-ACCESS-PASSPHRASE": "Amit@1234",
+          "OK-ACCESS-PASSPHRASE": process.env.PASSPHRASE || "",
           "Content-Type": "application/json",
         },
         // body:{chains:["1","2"],address:"0xf4d2888d29d722226fafa5d9b24f9164c092421e"}

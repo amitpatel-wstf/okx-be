@@ -12,17 +12,17 @@ export async function crossChainSwap() {
     const sign = CryptoJS.enc.Base64.stringify(
       CryptoJS.HmacSHA256(
         timestamp + "GET" + apiEndPoints,
-        "3A4193E92078633B376FB4937899E4A2",
+        process.env.SIGN || "",
       ),
     );
 
     const request = await fetch("https://www.okx.com" + apiEndPoints, {
       headers: {
-        "OK-ACCESS-PROJECT": "eef86aba59d93b4a8a90480e49d5d63b",
-        "OK-ACCESS-KEY": "07e956d1-664e-4fcb-b918-e980d9184729",
+        "OK-ACCESS-PROJECT": process.env.PROJECT_ID || "",
+        "OK-ACCESS-KEY": process.env.ACCESS_KEY || "",
         "OK-ACCESS-TIMESTAMP": timestamp,
         "OK-ACCESS-SIGN": sign,
-        "OK-ACCESS-PASSPHRASE": "Amit@1234",
+        "OK-ACCESS-PASSPHRASE": process.env.PASSPHRASE || "",
         "Content-Type": "application/json",
       },
     });

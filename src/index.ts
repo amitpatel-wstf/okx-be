@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import { Routes } from "./Routes/route";
 import { getWalletBalance } from "./helpers/getWalletBalance";
